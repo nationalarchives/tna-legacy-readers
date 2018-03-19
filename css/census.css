@@ -1,0 +1,97 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	color: #000;
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+a:link       {    text-decoration:underline;color:#0066cc;}
+a:visited    {    text-decoration:underline;color:#660000;}
+a:hover      {    text-decoration:underline;color:#cc0000;}
+a:active     {    text-decoration:underline;color:#0066cc;}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+a.active {
+	color: #000000;
+	}
+img { 
+	border: none;
+}	
+
+#maincontent {
+	clear: both;
+	min-width: 850px;
+	margin: 0px auto;
+	padding: 0 10px;
+	min-height: 380px;
+}
+
+#footer {
+	clear: both;
+	height: 20px;
+	border-top: 1px solid #cc0000;
+	background-color: #eeeeee;
+	padding:10px;
+	}
+#footer p {
+	font-weight: normal;
+	color: #000000;
+
+	font-size: 12px;
+	text-align: center;
+	}
+/* type */
+h1 {
+	margin: 30px 5px 5px 0;
+	padding: 0;
+	font-size: 150%;
+	font-weight: bold;
+	color: #000000;
+	}
+h2 {
+	margin: 0 0 10px 0;
+	padding: 0px;
+	font-size: 100%;
+	font-weight: bold;
+	color: #000000;
+	
+	}
+p {
+	font-size: 80%;
+	margin: 5px 0 10px 0;
+	padding: 0;
+	line-height: 16px;
+	}
+
+#contentmain { background-color:#fff; height:450px;   }
+html>body #contentmain    {height:auto; min-height:450px; overflow:hidden; }
+
+table        {    vertical-align:top; width:90%; font-size:0.7em; border-collapse:collapse; margin-bottom:10px; voice-family: "\"}\""; voice-family:inherit; /*\*/width:100%; font-size:1em;/**/}
+.clear    { clear:both;}
+
+th           {    text-align:left; vertical-align:top; padding:5px; background-color: #F3F0DD; border-bottom:1px solid #fff}
+td           {    padding:5px; vertical-align:top;background-color:#F3F0DD; border-bottom:1px solid #fff}
+
+td h2        {    font-size:0.95em;}
+td          {    font-size:0.8em;}
+td.beige     {    background-color:#F3F0DD; padding:5px; vertical-align:top; border-bottom:1px solid #fff}
+td.lightcol {border:1px solid #fff}}
+.nocolour       { background-color:#fff;}
+.nocolour table { background-color:#fff;}    
+.nocolour td    { background-color:#fff; border-bottom:2px solid #F3F0DD;}
+th.nocolour    { background-color:#fff; border-bottom:1px solid #F3F0DD; }
+
+colgroup.thirty    {    width:30%; }
+colgroup.seventy   {    width:70%;}
+
+.3col1 {width:25%;}
+.3col2 {width:15%;}
+.3col3 {width:60%;}
+
+.thindots{background:url(/images/global/smalldots.gif) left bottom repeat-x}
+.lightcol {background-color:#faf9eb;}
