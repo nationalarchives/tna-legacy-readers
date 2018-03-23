@@ -1,6 +1,7 @@
 OrderDocScreen/
 backup/
 aspnet_client/
+/.idea
 
 
 # Created by https://www.gitignore.io/api/phpstorm,sublimetext
