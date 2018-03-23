@@ -1,2 +1,2 @@
-.intro-card{background-color:pink}
+.content{padding:1em}.content h2{display:inline-block}.card:hover{text-decoration:none;box-shadow:0 4px 7px #ccc}.card ul.full a:hover{text-decoration:underline;box-shadow:none}.spacing-bottom{margin-bottom:1.5em}.round-borders{border:1px solid #ddd;border-radius:4px}
 /*# sourceMappingURL=readers-screen.css.min.map */

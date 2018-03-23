@@ -1,3 +1,31 @@
-.intro-card {
-  background-color: pink;
+.content {
+  padding: 1em;
+
+  h2 {
+    display: inline-block;
+  }
+}
+
+.card {
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 7px #ccc;
+  }
+  ul.full {
+    a {
+      &:hover {
+        text-decoration: underline;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.spacing-bottom {
+  margin-bottom: 1.5em;
+}
+
+.round-borders {
+  border: solid 1px #ddd;
+  border-radius: 4px;
 }
