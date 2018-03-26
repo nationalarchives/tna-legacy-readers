@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 files: {
                     'css/tna-base.css': 'sass/base-sass.scss',
                     'css/tna-forms.css': 'sass/forms-sass.scss',
-                    'css/readers-screen.css': 'sass/readers-screen.scss'
+                    'css/reading-rooms.css': 'sass/reading-rooms.scss'
                 }
             }
         },
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 files: {
                     'css/tna-base.css.min': ['css/tna-base.css'],
                     'css/tna-forms.css.min': ['css/tna-forms.css'],
-                    'css/readers-screen.css.min': ['css/readers-screen.css']
+                    'css/reading-rooms.css.min': ['css/reading-rooms.css']
                 }
             }
         },
