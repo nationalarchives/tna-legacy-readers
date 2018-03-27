@@ -27,19 +27,34 @@ module.exports = function (grunt) {
                 }
             }
         },
+        pug: {
+            compile: {
+                options: {
+                    pretty: true,
+                },
+                files: {
+                    '/dest.html': '/dest.pug'
+                }
+            }
+        },
         watch: {
             css: {
                 files: 'sass/*.scss',
                 tasks: ['sass', 'cssmin']
+            },
+            pug: {
+                files: 'tna-legacy-readers/dest.pug',
+                tasks: ['pug']
             }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['sass', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['pug', 'sass', 'cssmin', 'watch']);
 
 };
