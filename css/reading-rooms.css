@@ -51,11 +51,6 @@
 .absolute {
   position: absolute; }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.66);
-  color: #ddd;
-  padding: 1em; }
-
 .overlay-container {
   position: relative;
   height: 202px; }
@@ -68,3 +63,50 @@
     right: 0;
     background: rgba(0, 0, 0, 0.66);
     color: #ddd; }
+
+.flex-row .col-card-8, .flex-row .col-card-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 1.5em; }
+.flex-row .col-card-8 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 66.6666%;
+  -ms-flex: 0 0 66.6666%;
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+  min-width: 66.6666%; }
+  @media (max-width: 768px) {
+    .flex-row .col-card-8 {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; } }
+.flex-row .col-card-6 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-width: 50%; }
+  @media (max-width: 768px) {
+    .flex-row .col-card-6 {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; } }
+.flex-row .card .entry-content > a:hover {
+  box-shadow: none; }
+.flex-row .card .half {
+  width: 50%; }
+  @media (max-width: 768px) {
+    .flex-row .card .half {
+      width: 100%; } }
+.flex-row .card ul a:hover {
+  text-decoration: underline;
+  box-shadow: none; }
