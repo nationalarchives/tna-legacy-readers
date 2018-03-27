@@ -110,3 +110,17 @@
 .flex-row .card ul a:hover {
   text-decoration: underline;
   box-shadow: none; }
+
+.feedback {
+  width: 131px;
+  height: 101px;
+  background-color: #008484;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: #fff;
+  text-align: center;
+  padding: .5em;
+  right: -80px;
+  top: 25em;
+  position: fixed; }

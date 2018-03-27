@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                     pretty: true,
                 },
                 files: {
-                    '/dest.html': '/dest.pug'
+                    '/dest.html': ['/dest.pug']
                 }
             }
         },
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                files: 'tna-legacy-readers/dest.pug',
+                files: '/dest.pug',
                 tasks: ['pug']
             }
         }
@@ -55,6 +55,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['pug', 'sass', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['sass', 'cssmin', 'pug', 'watch']);
 
 };
