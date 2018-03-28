@@ -21,9 +21,9 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/tna-base.css.min': ['css/tna-base.css'],
-                    'css/tna-forms.css.min': ['css/tna-forms.css'],
-                    'css/reading-rooms.css.min': ['css/reading-rooms.css']
+                    'css/tna-base.css': ['css/tna-base.css'],
+                    'css/tna-forms.css': ['css/tna-forms.css'],
+                    'css/reading-rooms.css': ['css/reading-rooms.css']
                 }
             }
         },
