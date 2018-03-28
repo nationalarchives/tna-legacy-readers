@@ -1,6 +1,39 @@
 doctype html
-html(lang="en" dir="ltr")
+html(lang="en")
     head
-        title Hello World!!
+        title Pug stufffff
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width", initial-scale="1")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+
     body
-        p.className#idName Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        //
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+        div.container
+
+            nav.navbar.navbar-default
+                div.container-fluid
+                    div.navbar-header
+                        a.navbar-brand(href="#") Pug Demo
+                    div#navbar.navbar-collapse.collapse
+                        ul.nav.navbar-nav
+                            li.active
+                                a(href="#") Home
+                            li
+                                a(href="#") About
+                            li
+                                a(href="#") Contact
+
+        div.container
+
+
+
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+
+            input(type="email", placeholder="Your email")
+            input(type="submit")
+
+        footer
+
+            script(src='https://code.jquery.com/jquery-2.2.3.min.js')
+            script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')

@@ -33,7 +33,7 @@ module.exports = function (grunt) {
                     pretty: true,
                 },
                 files: {
-                    '/tna-legacy-readers/test.html': ['/tna-legacy-readers/dest.pug']
+                    'test.html': 'dest.pug'
                 }
             }
         },
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                files: '/tna-legacy-readers/dest.pug',
+                files: 'dest.pug',
                 tasks: ['pug']
             }
         }
@@ -58,6 +58,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['sass', 'cssmin', 'pug', 'watch']);
+    grunt.registerTask('default', "Convert Jade templates into html templates", ['sass', 'cssmin', 'pug', 'watch']);
 
 };
