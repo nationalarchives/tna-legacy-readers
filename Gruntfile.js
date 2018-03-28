@@ -33,17 +33,20 @@ module.exports = function (grunt) {
                     pretty: true,
                 },
                 files: {
-                    '/dest.html': ['/dest.pug']
+                    '/tna-legacy-readers/test.html': ['/tna-legacy-readers/dest.pug']
                 }
             }
         },
         watch: {
+            grunt: {
+                files: ['Gruntfile.js']
+            },
             css: {
                 files: 'sass/*.scss',
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                files: '/dest.pug',
+                files: '/tna-legacy-readers/dest.pug',
                 tasks: ['pug']
             }
         }

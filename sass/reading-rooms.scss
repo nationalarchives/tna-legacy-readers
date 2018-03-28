@@ -179,4 +179,12 @@
   top: 25em;
 
   position: fixed;
+
+  font-family: "Open Sans", arial, serif;
+
+  &:hover {
+    background-color: #fce45c;
+    color: #000;
+    text-decoration: underline;
+  }
 }

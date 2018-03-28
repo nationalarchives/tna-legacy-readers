@@ -123,4 +123,9 @@
   padding: .5em;
   right: -80px;
   top: 25em;
-  position: fixed; }
+  position: fixed;
+  font-family: "Open Sans", arial, serif; }
+  .feedback:hover {
+    background-color: #fce45c;
+    color: #000;
+    text-decoration: underline; }
