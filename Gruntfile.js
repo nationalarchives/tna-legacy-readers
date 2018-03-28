@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 files: {
                     'css/tna-base.css': 'sass/base-sass.scss',
                     'css/tna-forms.css': 'sass/forms-sass.scss',
-                    'css/reading-rooms.css': 'sass/reading-rooms.scss'
+                    'css/reading-rooms.css': 'sass/reading-rooms.scss',
                     'css/ie7.css': 'sass/ie7.scss'
                 }
             }
