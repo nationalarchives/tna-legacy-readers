@@ -192,3 +192,11 @@
 .no-margin {
   margin: 0;
 }
+
+#header {
+  background-color : black\9; /* IE8 and below */
+
+  h1 {
+    color : #fff\9; /* IE8 and below */
+  }
+}

@@ -8,3 +8,10 @@
 .row {
   margin-bottom: 1em;
 }
+
+.full {
+  li {
+    float: none;
+    display: block;
+  }
+}
