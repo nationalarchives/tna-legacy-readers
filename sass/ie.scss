@@ -1,8 +1,25 @@
+.card {
+  background: #fff;
+  clear: both;
+}
+.col-card-8 {
+  max-width: 61%!important;
+  min-width: 61%!important;
+  float: left;
+}
+
+.col-card-4 {
+  float: left;
+}
+
+
+
 .left {
   float:left;
   max-width: 30.33%!important;
   min-width: 30.33%!important;
   display: block;
+  overflow: hidden;
 }
 
 .row {
