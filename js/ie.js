@@ -7,3 +7,5 @@ $(".card").each(
         }
     });
 $(".ie > .card").css("height", cardHeight + "px");
+
+//alert('I hate IE');

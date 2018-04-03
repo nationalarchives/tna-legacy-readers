@@ -1,2 +1,2 @@
-.left{float:left;max-width:30.33%!important;min-width:30.33%!important;display:block}.row{margin-bottom:1em}.full li{float:none;display:block}
+.overlay,.overlay a,header #header{background-color:#222}.left{float:left;max-width:30.33%!important;min-width:30.33%!important;display:block}.row{margin-bottom:1em}.full li{float:none;display:block}header #header div{float:left;width:550px;overflow:hidden}.overlay{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";filter:alpha(opacity=85)}.overlay a{z-index:100;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100)}
 /*# sourceMappingURL=ie.css.map */
