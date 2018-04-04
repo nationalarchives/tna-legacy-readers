@@ -1,9 +1,6 @@
-var cardHeight = 0;
-$(".card").each(
-    function(index) {
-        var tallest = $(this).height();
-        if (tallest > cardHeight) {
-            cardHeight = tallest
-        }
+$(window).load(function() {
+    //equalheight('.equal-heights  .card');
+    $( ".equal-heights  .card" ).each(function() {
+        $(this).equalheight('.equal-heights  .card');
     });
-$(".ie > .card").css("height", cardHeight + "px");
+});
