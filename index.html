@@ -36,12 +36,6 @@
     <script src="js/js-library/html5shiv.js"></script>
     <![endif]-->
 
-    <!--[if lt IE 10]>
-    <script src="js/js-library/jquery-1.9.0.min.js"></script>
-    <script src="js/js-library/jQuery.equalHeights.js"></script>
-    <script src="js/ie.js"></script>
-    <![endif]-->
-
 </head>
 
 <body class="hue-grey-lighter">
@@ -133,7 +127,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="cards">
-                    <div class="flex-row equal-heights">
+                    <div class="flex-row equal-heights ie">
                         <div class="col-card-8">
                             <div class="card">
                                 <div class="entry-content">
@@ -181,7 +175,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="cards">
-                    <div class="flex-row equal-heights">
+                    <div class="flex-row equal-heights last">
                         <div class="col-card-6">
                             <div class="card">
                                 <div class="entry-content">
@@ -202,6 +196,12 @@
         </div>
     </div>
 </main>
+
+<!--[if lt IE 10]>
+<script src="js/js-library/jquery-1.9.0.min.js"></script>
+<script src="js/ie.js"></script>
+<![endif]-->
+
 </body>
 <a class="feedback" href="#">
     <span>Feedback</span>
