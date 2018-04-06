@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                     pretty: true,
                 },
                 files: {
-                    'test.html': 'dest.pug'
+                    'test.html': 'pug/index.pug'
                 }
             }
         },
@@ -52,7 +52,7 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                files: 'dest.pug',
+                files: 'pug/index.pug',
                 tasks: ['pug']
             }
         }
