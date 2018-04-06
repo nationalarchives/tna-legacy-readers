@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                     pretty: true,
                 },
                 files: {
-                    'test.html': 'pug/index.pug'
+                    'index.html': 'pug/index.pug'
                 }
             }
         },
