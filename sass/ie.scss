@@ -43,7 +43,10 @@ header {
     }
   }
 }
-
+.background-image {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/tna-readers-screens-whats-on-01.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/tna-readers-screens-whats-on-01.jpg', sizingMethod='scale')";
+}
 .overlay {
   background-color: #222;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";/* IE 8 */

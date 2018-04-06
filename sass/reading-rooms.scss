@@ -47,9 +47,12 @@
 }
 
 .background-image {
-  background: url("/img/tna-readers-screens-whats-on-01.jpg");
+  background: url("/img/tna-readers-screens-whats-on-01.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  min-height: 202px;
+  min-height: 250px;
 }
 
 .card-single {
@@ -77,7 +80,7 @@
 
 .overlay-container {
   position: relative;
-  height: 202px;
+  height: 250px;
 
   .overlay {
     position: absolute;

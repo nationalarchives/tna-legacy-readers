@@ -18,11 +18,11 @@
 }
 
 .feedback {
-  position: relative;
-  float: right;
-
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  //background: url("../img/feedback.png") no-repeat top;
+  //background-color: $tna_teal;
+  background-size: 80px 60px;
   span {
-    position: absolute;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    display: none;
   }
 }
