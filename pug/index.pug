@@ -52,3 +52,20 @@ html(lang="en")
                             div.entry-content.text-center
                                 h2.center-inline.no-margin Unfamiliar with the archives?
                                 a.button.no-margin(href="#", role="button") Start here
+
+                div.row
+                    div.col-md-12
+                        div.cards
+                            div.flex-row.equal-heights
+                                div.col-card-4.left.ie
+                                    div.card
+                                        div.entry-content
+                                            h2 Document ordering
+                                            p With a reader's ticket you can order original documents to view in the reading rooms.
+                                            ul.full
+                                                li: a(href='reader-registration.html' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Do I need a readers ticket?","WT.cg_n","Readers homepage","WT.dl","0");' target='mainFrame') Do i need a reader's ticket?
+                                                li: a(href='http://prologon.web.local/Entrance/default.asp' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Order documents","WT.cg_n","Readers homepage","WT.dl","0");' target='mainFrame') Order documents
+                                                li: a(href='http://doris.web.local/currord/default.aspx' target='mainFrame' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Check current orders","WT.cg_n","Readers homepage","WT.dl","0");') Check current orders
+                                                li: a() Reserve items for another day
+                                                li: a() Order documents for next time
+
