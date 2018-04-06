@@ -16,3 +16,13 @@
     }
   }
 }
+
+.feedback {
+  position: relative;
+  float: right;
+
+  span {
+    position: absolute;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
