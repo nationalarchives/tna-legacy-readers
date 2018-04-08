@@ -39,7 +39,8 @@ module.exports = function (grunt) {
                     pretty: true,
                 },
                 files: {
-                    'index.html': 'pug/index.pug'
+                    'index.html': 'pug/index.pug',
+                    'reader-registration.html': 'pug/reader-registration.pug'
                 }
             }
         },
@@ -52,7 +53,7 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                files: 'pug/index.pug',
+                files: ['pug/index.pug', 'pug/reader-registration.pug'],
                 tasks: ['pug']
             }
         }
