@@ -67,3 +67,22 @@ header {
     float: left;
   }
 }
+
+.reader-registration {
+  .col-md-8 {
+    max-width: 60%!important;
+    min-width: 50%!important;
+    float: left!important;
+    overflow: hidden;
+  }
+  .col-md-4 {
+    max-width: 30%!important;
+    min-width: 30%!important;
+    float: left!important;
+    overflow: hidden;
+  }
+  .full, .child {
+    float: none!important;
+    display: block;
+  }
+}
