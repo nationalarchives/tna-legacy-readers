@@ -51,7 +51,7 @@ html(lang="en")
                         div.shadow.hue-grey-light.content
                             div.entry-content.text-center
                                 h2.center-inline Unfamiliar with the archives?
-                                a.button.no-margin(href="http://www.nationalarchives.gov.uk/help-with-your-research/start-here/", role="button") Start here
+                                a.button.no-margin(href="http://www.nationalarchives.gov.uk/help-with-your-research/start-here/", role="button" target='_blank') Start here
 
                 div.row
                     div.col-md-12
@@ -63,11 +63,11 @@ html(lang="en")
                                             h2 Document ordering
                                             p With a reader's ticket you can order original documents to view in the reading rooms.
                                             ul.full
-                                                li: a(href='reader-registration.html' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Do I need a readers ticket?","WT.cg_n","Readers homepage","WT.dl","0");' target='mainFrame') Do I need a reader's ticket?
-                                                li: a(href='http://prologon.web.local/Entrance/default.asp' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Order documents","WT.cg_n","Readers homepage","WT.dl","0");' target='mainFrame') Order documents
-                                                li: a(href='http://doris.web.local/currord/default.aspx' target='mainFrame' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Check current orders","WT.cg_n","Readers homepage","WT.dl","0");') Check current orders
-                                                li: a(href='http://doris.web.local/elsa/public/document-reservation-logon.asp' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Reserve for another day&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);' target='mainFrame') Reserve items for another day
-                                                li: a(href='http://www.nationalarchives.gov.uk/about/visit-us/researching-here/ordering-documents-in-advance-or-in-bulk/' target='mainFrame' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Order documents in advance&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Order documents for next time
+                                                li: a(href='reader-registration.html' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Do I need a readers ticket?","WT.cg_n","Readers homepage","WT.dl","0");') Do I need a reader's ticket?
+                                                li: a(href='http://prologon.web.local/Entrance/default.asp' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Order documents","WT.cg_n","Readers homepage","WT.dl","0");' target='_blank') Order documents
+                                                li: a(href='http://doris.web.local/currord/default.aspx' target='_blank' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Check current orders","WT.cg_n","Readers homepage","WT.dl","0");') Check current orders
+                                                li: a(href='http://doris.web.local/elsa/public/document-reservation-logon.asp' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Reserve for another day&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);' target='_blank') Reserve items for another day
+                                                li: a(href='http://www.nationalarchives.gov.uk/about/visit-us/researching-here/ordering-documents-in-advance-or-in-bulk/' target='_blank' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Order documents in advance&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Order documents for next time
 
                                 div.col-card-4.left.ie
                                     div.card
@@ -116,7 +116,7 @@ html(lang="en")
                                         div.entry-content
                                             h2 Discovery, our catalogue
                                             p Discovery holds more than 32 million descriptions of records held by The National Archives and more than 2,500 archives across the country. Over 9 million records are available for download.
-                                            a(href='http://discovery.nationalarchives.gov.uk/' role='button').button.half Search the catalogue
+                                            a(href='http://discovery.nationalarchives.gov.uk/' role='button' target='_blank').button.half Search the catalogue
 
                 div.row.spacing-bottom
                     div.col-md-12
@@ -133,13 +133,13 @@ html(lang="en")
                                     div.card
                                         div.entry-content
                                             p Found a problem with a document you have received in the reading rooms?
-                                            a(href='https://www.nationalarchives.gov.uk/contact-us/document-condition-feedback/' role='button') Report a problem
+                                            a(href='https://www.nationalarchives.gov.uk/contact-us/document-condition-feedback/' role='button' target='_blank') Report a problem
 
                                 div.col-card-6
                                     div.card
                                         div.entry-content
                                             p Want to contact us with any other queries and comments?
-                                            a(href='http://www.nationalarchives.gov.uk/contact/' role='button') Contact us
+                                            a(href='http://www.nationalarchives.gov.uk/contact/' role='button' target='_blank') Contact us
 
                 div.row.spacing-bottom
                     div.col-md-12
