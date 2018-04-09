@@ -1,8 +1,9 @@
 OrderDocScreen/
 backup/
 aspnet_client/
+/.idea
 
-
+node_modules
 # Created by https://www.gitignore.io/api/phpstorm,sublimetext
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm

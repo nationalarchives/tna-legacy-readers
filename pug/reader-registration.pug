@@ -1,0 +1,132 @@
+doctype html
+html(lang="en")
+    head
+        title The National Archives reading rooms
+
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name="viewport", content="width=device-width", initial-scale="1")
+        meta(name="description" content="The National Archives reading rooms")
+        meta(name="author" content="The National Archives")
+
+        link(rel="stylesheet" id="tna-google-fonts" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14" type="text/css" media="all")
+        link(rel="stylesheet" href="css/tna-base.css")
+        link(rel="stylesheet" href="css/reading-rooms.css")
+        link(rel="stylesheet" href="css/toolkit.css")
+
+        <!--[if lt IE 9]>
+        link(rel="stylesheet" type="text/css" href="css/ie.css")
+        <![endif]-->
+
+        <!--[if IE 8]>
+        link(rel="stylesheet" type="text/css" href="css/ie8.css")
+        <![endif]-->
+
+        <!--[if IE 7]>
+        link(rel="stylesheet" type="text/css" href="css/ie7.css")
+        <![endif]-->
+
+        link(rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/favicon.ico")
+        link(rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico")
+
+        <!--[if lt IE 10]>
+        script(src="js/js-library/html5shiv.js")
+        <![endif]-->
+
+    body.hue-grey-lighter.reader-registration
+        header.spacing-bottom
+            div.container
+                div#header.row
+                    div.col-md-6
+                        div.icon.icon-logo-tna
+                    div.col-md-6.text-right
+                        h1 Reading rooms
+
+        main
+            div.container
+                div.row
+                    div.col-md-12.content
+                        a(href='/' title='Back').button &lt; Back
+
+                div.row
+                    div.col-md-8
+                        div.card.white-background.content
+                            div.entry-content.clr
+                                h2#do Do I need a reader's ticket?
+                                p You do <strong>not</strong> need a reader's ticket to use our most popular resources online or on microfilm/fiche.
+                                p You <strong>do</strong> need a reader's ticket to view documents that are only available in their original format, for example paper or parchment.
+                                div.content.hue-grey-lightest.spacing-bottom.clr
+                                    h3#how How do I get a reader's ticket?
+                                    form#intro1(name='intro1' method='get' target='_blank' )
+                                        p
+                                            input#register.button(name='register' alt='Register' value='Register' type='submit')
+                                    p Readers' tickets can be collected from the ticket collection desk in the Start Here area on the first floor. Upon collection, please show #[a(href="#identification") <strong>two forms of identification.</strong>]
+                                    p #[a(href='http://www.nationalarchives.gov.uk/visit/times.htm' target='_blank' title='Link opens in a new window') See opening times] of the reader registration desk.
+                                h3#without What can I do without a reader's ticket?
+                                p If you do <strong>not</strong> have a reader's ticket you can still use a huge variety of online resources and records on microfilm/fiche. The best way to start is to use our #[a(href='http://www.nationalarchives.gov.uk/help-with-your-research/#find-a-research-guide') research guides].
+                                h3#use How do I use my reader's ticket?
+                                p Once you have a reader's ticket, you can use it to order original documents on any of the public computers.
+                                p Your documents will arrive within about 45 minutes. They will be available to view either in the Document Reading Room (first floor) or the Map and Large Document Reading Room (second floor). You must produce your reader's ticket to get into these rooms.
+                                h3#lost Lost or stolen tickets
+                                p To replace a lost or stolen ticket, go to the reader registration desk on the second floor with two forms of identification from the lists on the right.
+                                p If you have lost your ticket you must pay a fee of £5 at the reader registration desk.
+                                p If your ticket has been stolen you must produce a police crime reference number. There is no charge for replacing a stolen ticket.
+                                h3#identification Acceptable forms of identification
+                                p You will need <strong>two</strong> forms of identification, one to prove your identity and one to prove your address.
+                                p Please note that we will not issue a reader's ticket unless you have suitable identity with you, nor will we contact any third party to validate any other identification supplied.
+                                h3#proofs-address Proofs of address
+                                p All bills and statements must have been issued within the last three months. Internet printouts, mobile phone contracts and online statements are not accepted.
+                                div.content.hue-grey-lightest.spacing-bottom.clr
+                                    ul.child
+                                        li Utility bill
+                                        li Bank or building society statement
+                                        li Council tax bill
+                                        li Council Payment Book
+                                        li Council rent card or tenancy agreement
+                                        li HM Revenue &amp; Customs statement
+                                        li Passport with address
+                                        li National ID card with address
+                                        li Driving licence with address
+                                        li Home Office permit to stay
+                                        li University certificate for hall of residence (stamped and signed by institution)
+                                        li TV licence
+                                        li Firearms licence
+                                        li Home insurance policy
+                                        li Firearms licence
+                                        li International student photo card
+                                        li Benefit agency Book or original notification letter
+                                        li Student loan company LEA/SASS award letter
+
+                            h3#proofs-name Proofs of name
+                            p All proofs of name must include a valid signature.
+                            div.content.hue-grey-lightest.spacing-bottom.clr
+                                ul.child
+                                    li Expired National Archives' photo reader's ticket
+                                    li Passport
+                                    li Driving licence
+                                    li Bank card or
+                                    li credit card
+                                    li National ID card
+                                    li Police/Customs/Home Office warrant card
+                                    li Forces ID card
+                                    li Sea/Air Masters Licence
+                                    li NUJ pass
+                                    li Government/local council staff ID
+                                    li Blue Badge (driver's pass)
+                    div.col-md-4
+                        div.card.white-background.content
+                            div.entry-content.clr
+                                h2 Contents
+                                ul.full
+                                    li: a(href='#do') Do I need a reader's ticket?
+                                    li: a(href='#how') How do I get a reader's ticket?
+                                    li: a(href='#without') What can I do without a reader's ticket?
+                                    li: a(href='#use') How do I use my reader's ticket?
+                                    li: a(href='#lost') Lost or stolen tickets
+                                    li: a(href='#identification') Acceptable forms of identification
+                                    li: a(href='#proofs-address') Proofs of address
+                                    li: a(href='#proofs-name') Proofs of name
+
+                div.row
+                    div.col-md-12.content
+                        a(href='/' title='Back').button &lt; Back

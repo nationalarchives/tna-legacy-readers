@@ -1,0 +1,49 @@
+/* Default page layout */
+
+article {
+  background-color: $tna_white;
+  margin-bottom: 1.5em;
+  .entry-header {
+    padding: 10px 10px 0 0;
+    background: $tna_dot_grey;
+    h1 {
+      font-size: 2em;
+      padding: 4px 10px;
+      background-color: $tna_blue;
+      color: #fff;
+      line-height: 1.25;
+      margin: 0 10px 0 -10px;
+      display: inline-block;
+    }
+    h2 {
+      padding: 4px 32px 4px 10px;
+      background-color: $tna_blue;
+      color: #fff;
+      line-height: 1.5;
+      margin: 0 10px 0 -10px;
+      display: inline-block;
+      a {
+        color: #fff;
+        background-image:$tna_icon_24_link;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        padding-right: 32px;
+      }
+    }
+  }
+  .entry-header:after {
+    content: ' ';
+    display: block;
+    height: 10px;
+    margin: 0 0 0 -10px;
+    background: $tna_heading_flourish;
+  }
+  .entry-content {
+    padding: 20px;
+    .thumbnail {
+      margin-bottom: 10px;
+      border:none;
+      padding:0;
+    }
+  }
+}

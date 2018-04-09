@@ -1,0 +1,19 @@
+/* TNA breadcrumb styles */
+
+.tna-breadcrumb {
+  margin-top: 0.5em;
+  .breadcrumbs {
+    margin: 1em 0;
+    font-size: .9em;
+  }
+  .breadcrumbs-overlay {
+    display: inline-block;
+    color: #fff;
+    padding: 3px 7px;
+    background-color: #000;
+    background-color: rgba(0,0,0,.5);
+  }
+  .breadcrumbs-overlay a {
+    color: #fce45c;
+  }
+}
