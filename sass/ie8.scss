@@ -1,8 +1,29 @@
+.col-card-4 {
+  display: block;
+  max-width: 30.88%!important;
+  min-width: 30.88%!important;
+  padding: 0;
+}
+.col-card-8 {
+  max-width: 64%!important;
+  min-width: 64%!important;
+}
+
+.col-card-6 {
+  max-width: 47.5555%!important;
+  min-width: 47.5555%!important;
+}
+
 .ie {
   .card {
     overflow: hidden;
     position: relative;
   }
+}
+
+.col-card-4 {
+  width: 10% !important;
+  float: left!important;
 }
 
 .feedback {

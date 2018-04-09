@@ -9,6 +9,11 @@ html(lang="en")
         meta(name="description" content="The National Archives reading rooms")
         meta(name="author" content="The National Archives")
 
+        <!--[if lt IE 10]>
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans')
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Bitter')
+        <![endif]-->
+
         link(rel="stylesheet" id="tna-google-fonts"
         href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14"
         type="text/css" media="all")
@@ -16,7 +21,8 @@ html(lang="en")
         link(rel="stylesheet" href="css/toolkit.css")
         link(rel="stylesheet" href="css/reading-rooms.css")
 
-        <!--[if lt IE 9]>
+
+        <!--[if lt IE 10]>
         link(rel="stylesheet" type="text/css" href="css/ie.css")
         <![endif]-->
 
@@ -33,6 +39,7 @@ html(lang="en")
 
         <!--[if lt IE 10]>
         script(src="js/js-library/html5shiv.js")
+        script(src="js/js/js-library/respond.min.js")
         <![endif]-->
 
     body.hue-grey-lighter
@@ -59,7 +66,7 @@ html(lang="en")
                             div.flex-row.equal-heights
                                 div.col-card-4.left.ie
                                     div.card
-                                        div.entry-content
+                                        div.entry-content.clr
                                             h2 Document ordering
                                             p With a reader's ticket you can order original documents to view in the reading rooms.
                                             ul.full
@@ -71,7 +78,7 @@ html(lang="en")
 
                                 div.col-card-4.left.ie
                                     div.card
-                                        div.entry-content
+                                        div.entry-content.clr
                                             h2 Online records
                                             p Over 5% of The National Archives' records have so far been digitised and we are continuing to put records online.
                                             ul.full
@@ -83,7 +90,7 @@ html(lang="en")
 
                                 div.col-card-4.left.ie
                                     div.card
-                                        div.entry-content
+                                        div.entry-content.clr
                                             h2 Help with your research
                                             p Our research guides can help you uncover the history of a place, a person or explore a particular historical subject.
                                             ul.full
@@ -149,5 +156,9 @@ html(lang="en")
         script(src="js/js-library/jquery-1.9.0.min.js")
         script(src="js/ie.js")
         <![endif]-->
+
+        script(src='js/js-library/webtrends.js')
+            
+
     a(href='http://www.smartsurvey.co.uk/s/Your-views/?x=f' target='_blank').feedback
         span Feedback
