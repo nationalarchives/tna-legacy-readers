@@ -171,6 +171,20 @@
     </main><!--[if lt IE 10]>
     <script src="js/js-library/jquery-1.9.0.min.js"></script>
     <script src="js/ie.js"></script><![endif]-->
-    <script src="js/js-library/webtrends.js"></script>
+    <script src="js/js-library/webtrends.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      var _tag = new WebTrends();
+      _tag.dcsGetId();
+      //]]>>
+    </script>
+    <script type="text/javascript">
+      //<![CDATA[
+      // Add custom parameters here.
+      //_tag.DCSext.param_name=param_value;
+      _tag.dcsCollect();
+      //]]>>
+      
+    </script>
   </body><a class="feedback" href="http://www.smartsurvey.co.uk/s/Your-views/?x=f" target="_blank"><span>Feedback</span></a>
 </html>

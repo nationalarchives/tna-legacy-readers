@@ -157,8 +157,18 @@ html(lang="en")
         script(src="js/ie.js")
         <![endif]-->
 
-        script(src='js/js-library/webtrends.js')
-            
+        script(src='js/js-library/webtrends.js' type='text/javascript' language='javascript')
+        script(type='text/javascript').
+            //<![CDATA[
+            var _tag = new WebTrends();
+            _tag.dcsGetId();
+            //]]>>
+        script(type='text/javascript').
+            //<![CDATA[
+            // Add custom parameters here.
+            //_tag.DCSext.param_name=param_value;
+            _tag.dcsCollect();
+            //]]>>
 
     a(href='http://www.smartsurvey.co.uk/s/Your-views/?x=f' target='_blank').feedback
         span Feedback
