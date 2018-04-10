@@ -9,10 +9,20 @@ html(lang="en")
         meta(name="description" content="The National Archives reading rooms")
         meta(name="author" content="The National Archives")
 
-        link(rel="stylesheet" id="tna-google-fonts" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14" type="text/css" media="all")
+        <!--[if lt IE 10]>
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans')
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Bitter')
+        <![endif]-->
+
+        link(rel="stylesheet" id="tna-google-fonts"
+        href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14"
+        type="text/css" media="all")
+
+
         link(rel="stylesheet" href="css/tna-base.css")
-        link(rel="stylesheet" href="css/reading-rooms.css")
         link(rel="stylesheet" href="css/toolkit.css")
+        link(rel="stylesheet" href="css/reading-rooms.css")
+
 
         <!--[if lt IE 9]>
         link(rel="stylesheet" type="text/css" href="css/ie.css")
@@ -36,7 +46,7 @@ html(lang="en")
     body.hue-grey-lighter.reader-registration
         header.spacing-bottom
             div.container
-                div#header.row
+                div.row#header
                     div.col-md-6
                         div.icon.icon-logo-tna
                     div.col-md-6.text-right
@@ -128,5 +138,6 @@ html(lang="en")
                                     li: a(href='#proofs-name') Proofs of name
 
                 div.row
-                    div.col-md-12.content
-                        a(href='/' title='Back').button &lt; Back
+                    div.col-md-12
+                        div.entry-content.clr
+                            a(href='/' title='Back').button &lt; Back

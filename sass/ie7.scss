@@ -1,6 +1,22 @@
+.col-card-4 {
+  display: block;
+  max-width: 30.88%!important;
+  min-width: 30.88%!important;
+  padding: 0;
+}
+.col-card-8 {
+  max-width: 64%!important;
+  min-width: 64%!important;
+}
+
+.col-card-6 {
+  max-width: 47.6666%!important;
+  min-width: 47.6666%!important;
+}
+
 .full {
   li {
-    float: none!important;
+    float: none;
     padding-bottom: 6px;
   }
 }
