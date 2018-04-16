@@ -9,7 +9,7 @@
     <meta name="author" content="The National Archives">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
-    <!--link(rel="stylesheet" href="css/ie-fonts.css")-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700">
     <link rel="stylesheet" href="css/tna-base.css">
     <link rel="stylesheet" href="css/toolkit.css">
     <link rel="stylesheet" href="css/reading-rooms.css"><!--[if lt IE 10]>
@@ -24,6 +24,17 @@
     <script src="js/js/js-library/respond.min.js"></script><![endif]-->
   </head>
   <body class="hue-grey-lighter">
+    <div class="notification-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="notice"><strong class="title">BETA</strong>
+              <p><strong>This is a new service</strong> - your <a href="http://www.smartsurvey.co.uk/s/BG051/" target="_blank">feedback</a> will help us improve it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="spacing-bottom">
       <div class="container">
         <div class="row" id="header">
@@ -68,8 +79,9 @@
                   <div class="card">
                     <div class="entry-content clr">
                       <h2>Online records</h2>
-                      <p>Over 5% of The National Archives' records have so far been digitised and we are continuing to put records online.</p>
+                      <p>Over 5% of The National Archives' records have so far been digitised.</p>
                       <ul class="full">
+                        <li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?letter=&amp;search=&amp;research-category=online" target="_blank" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;All online records&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);">All online records</a></li>
                         <li><a href="http://www.findmypast.co.uk/1939register" target="_blank" title="Link opens in a new window" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;1939 Register&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);">1939 register</a></li>
                         <li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/census-records/#3-how-to-access-the-censuses" target="_blank" title="Link opens in a new window" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;Census records&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);">Census records</a></li>
                         <li><a href="http://www.nationalarchives.gov.uk/first-world-war/centenary-digitised-records/" title="Link opens in a new window" target="_blank" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;First World War&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);">First World War</a></li>
@@ -83,7 +95,7 @@
                   <div class="card">
                     <div class="entry-content clr">
                       <h2>Help with your research</h2>
-                      <p>Our research guides can help you uncover the history of a place, a person or explore a particular historical subject.</p>
+                      <p>Use our research guides to help you uncover the history of places, people or subjects.</p>
                       <ul class="full">
                         <li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=family-history" target="_black" title="Link opens in a new window" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;Find a research guide&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Family history&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);">Family history</a></li>
                         <li><a href="http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/first-world-war/" target="_blank" title="Link opens in a new window" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;First world war&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);">First World War</a></li>
@@ -125,7 +137,7 @@
                   <div class="card">
                     <div class="entry-content">
                       <h2>Discovery, our catalogue</h2>
-                      <p>Discovery holds more than 32 million descriptions of records held by The National Archives and more than 2,500 archives across the country. Over 9 million records are available for download.</p><a class="button half" href="http://discovery.nationalarchives.gov.uk/" role="button" target="_blank">Search our catalogue</a>
+                      <p>Discovery contains short descriptions of records held here and at over 2,500 archives elsewhere. Search for document references using keywords and dates.</p><a class="button half" href="http://discovery.nationalarchives.gov.uk/" role="button" target="_blank">Search our catalogue</a>
                     </div>
                   </div>
                 </div>
@@ -143,29 +155,7 @@
           </div>
         </div>
         <div class="row spacing-bottom">
-          <div class="col-md-12">
-            <div class="cards">
-              <div class="flex-row equal-heights last">
-                <div class="col-card-6">
-                  <div class="card">
-                    <div class="entry-content">
-                      <p>Found a problem with a document you have received in the reading rooms?</p><a href="https://www.nationalarchives.gov.uk/contact-us/document-condition-feedback/" role="button" target="_blank">Report a problem</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-card-6">
-                  <div class="card">
-                    <div class="entry-content">
-                      <p>Want to contact us with any other queries and comments?</p><a href="http://www.nationalarchives.gov.uk/contact/" role="button" target="_blank">Contact us</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row spacing-bottom">
-          <div class="col-md-12"><small>The National Archives takes your privacy seriously and is committed to responsible handling of personal information. If you would like to know more, please click <a href="http://www.nationalarchives.gov.uk/legal/privacy-policy/">here</a>.</small></div>
+          <div class="col-md-12"><small>The National Archives takes your privacy seriously and is committed to responsible handling of personal information. If you would like to know more, please click <a href="http://www.nationalarchives.gov.uk/legal/privacy-policy/" target="_blank">here</a>.</small></div>
         </div>
       </div>
     </main><!--[if lt IE 10]>

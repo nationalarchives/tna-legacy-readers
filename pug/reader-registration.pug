@@ -9,14 +9,10 @@ html(lang="en")
         meta(name="description" content="The National Archives reading rooms")
         meta(name="author" content="The National Archives")
 
-        <!--[if lt IE 10]>
-        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans')
-        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Bitter')
-        <![endif]-->
 
-        link(rel="stylesheet" id="tna-google-fonts"
-        href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14"
-        type="text/css" media="all")
+        link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter")
+        link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans')
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700")
 
 
         link(rel="stylesheet" href="css/tna-base.css")
@@ -43,7 +39,14 @@ html(lang="en")
         script(src="js/js-library/html5shiv.js")
         <![endif]-->
 
-    body.hue-grey-lighter.reader-registration
+    body.hue-grey-lighter
+        div.notification-banner
+            div.container
+                div.row
+                    div.col-md-12
+                        div.notice
+                            strong.title BETA
+                            p <strong>This is a new service</strong> - your <a href="http://www.smartsurvey.co.uk/s/BG051/" target="_blank">feedback</a> will help us improve it.
         header.spacing-bottom
             div.container
                 div.row#header
