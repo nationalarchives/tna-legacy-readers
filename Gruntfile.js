@@ -14,7 +14,8 @@ module.exports = function (grunt) {
                     'css/reading-rooms.css': 'sass/reading-rooms.scss',
                     'css/ie.css': 'sass/ie.scss',
                     'css/ie7.css': 'sass/ie7.scss',
-                    'css/ie8.css': 'sass/ie8.scss'
+                    'css/ie8.css': 'sass/ie8.scss',
+                    'css/ie-fonts.css': 'sass/ie-fonts.scss'
                 }
             }
         },
@@ -29,7 +30,8 @@ module.exports = function (grunt) {
                     'css/reading-rooms.css': ['css/reading-rooms.css'],
                     'css/ie.css': ['css/ie.css'],
                     'css/ie7.css': ['css/ie7.css'],
-                    'css/ie8.css': ['css/ie8.css']
+                    'css/ie8.css': ['css/ie8.css'],
+                    'css/ie-fonts.css': ['css/ie-fonts.css']
                 }
             }
         },

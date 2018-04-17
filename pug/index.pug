@@ -9,14 +9,12 @@ html(lang="en")
         meta(name="description" content="The National Archives reading rooms")
         meta(name="author" content="The National Archives")
 
-        <!--[if lt IE 10]>
-        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans')
-        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Bitter')
-        <![endif]-->
 
-        link(rel="stylesheet" id="tna-google-fonts"
-        href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.14"
-        type="text/css" media="all")
+        link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Bitter")
+        link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans')
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:700")
+
+
         link(rel="stylesheet" href="css/tna-base.css")
         link(rel="stylesheet" href="css/toolkit.css")
         link(rel="stylesheet" href="css/reading-rooms.css")
@@ -43,11 +41,19 @@ html(lang="en")
         <![endif]-->
 
     body.hue-grey-lighter
+        div.notification-banner
+            div.container
+                div.row
+                    div.col-md-12
+                        div.notice
+                            strong.title BETA
+                            p <strong>This is a new service</strong> - your <a href="http://www.smartsurvey.co.uk/s/BG051/" target="_blank">feedback</a> will help us improve it.
         header.spacing-bottom
             div.container
                 div.row#header
                     div.col-md-6
-                        div.icon.icon-logo-tna
+                        a(href='http://www.nationalarchives.gov.uk' target='_blank').visible-lg.visible-md.visible-sm
+                            img(src='img/logo-white.png').img-responsive
                     div.col-md-6.text-right
                         h1 Reading rooms
 
@@ -80,8 +86,9 @@ html(lang="en")
                                     div.card
                                         div.entry-content.clr
                                             h2 Online records
-                                            p Over 5% of The National Archives' records have so far been digitised and we are continuing to put records online.
+                                            p Over 5% of The National Archives' records have so far been digitised.
                                             ul.full
+                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=online' target='_blank' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","All online records","WT.cg_n","Readers homepage","WT.dl","0");') All online records
                                                 li: a(href='http://www.findmypast.co.uk/1939register' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;1939 Register&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') 1939 register
                                                 li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/census-records/#3-how-to-access-the-censuses' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Census records&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Census records
                                                 li: a(href='http://www.nationalarchives.gov.uk/first-world-war/centenary-digitised-records/' title='Link opens in a new window' target='_blank' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;First World War&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') First World War
@@ -92,14 +99,14 @@ html(lang="en")
                                     div.card
                                         div.entry-content.clr
                                             h2 Help with your research
-                                            p Our research guides can help you uncover the history of a place, a person or explore a particular historical subject.
+                                            p Use our research guides to help you uncover the history of places, people or subjects.
                                             ul.full
                                                 li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=family-history' target='_black' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Find a research guide&quot;,&quot;WT.cg_n&quot;,&quot;Family history&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Family history
+                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/first-world-war/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;First world war&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') First World War
+                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/second-world-war/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Second world war&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Second World War
                                                 li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/#find-a-research-guide' title='Link opens in a new window' target='_blank' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Find a research guide&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Find a research guide
                                                 li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides-keywords/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;A-Z index&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);' ) A-Z index
                                                 li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/#other-research-tools' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Other research tools&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Other research tools
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/first-world-war/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;First world war&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') First World War
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/second-world-war/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Second world war&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Second World War
 
                 div.row
                     div.col-md-12
@@ -110,10 +117,10 @@ html(lang="en")
                                         div.entry-content
                                             h2 Useful links
                                             ul.child
+                                                li: a(href='http://www.nationalarchives.gov.uk/' target='_blank' title='Link opens in a new window') The National Archives
                                                 li: a(href='https://www.ancestry.co.uk/' target='_blank' title='Link opens in a new window') Ancestry
                                                 li: a(href='https://www.findmypast.co.uk/' target='_blank' title='Link opens in a new window') Find my past
                                                 li: a(href='https://www.freebmd.org.uk/' target='_blank' title='Link opens in a new window') FreeBMD
-                                                li: a(href='http://discovery.nationalarchives.gov.uk/' target='_blank' title='Link opens in a new window') Our catalogue
                                                 li: a(href='https://www.thegazette.co.uk/' target='_blank' title='Link opens in a new window') The Gazette
                                                 li: a(href='http://www.nationalarchives.gov.uk/labs/valuation-office-map-finder/' target='_blank' title='Link opens in a new window') Valuation Office map finder
                                                 li: a(href='http://tna.koha-ptfs.co.uk/' target='_blank' title='Link opens in a new window') Library
@@ -124,8 +131,8 @@ html(lang="en")
                                     div.card
                                         div.entry-content
                                             h2 Discovery, our catalogue
-                                            p Discovery holds more than 32 million descriptions of records held by The National Archives and more than 2,500 archives across the country. Over 9 million records are available for download.
-                                            a(href='http://discovery.nationalarchives.gov.uk/' role='button' target='_blank').button.half Search the catalogue
+                                            p Discovery contains short descriptions of records held here and at over 2,500 archives elsewhere. Search for document references using keywords and dates.
+                                            a(href='http://discovery.nationalarchives.gov.uk/' role='button' target='_blank').button.half Search our catalogue
 
                 div.row.spacing-bottom
                     div.col-md-12
@@ -136,23 +143,7 @@ html(lang="en")
 
                 div.row.spacing-bottom
                     div.col-md-12
-                        div.cards
-                            div.flex-row.equal-heights.last
-                                div.col-card-6
-                                    div.card
-                                        div.entry-content
-                                            p Found a problem with a document you have received in the reading rooms?
-                                            a(href='https://www.nationalarchives.gov.uk/contact-us/document-condition-feedback/' role='button' target='_blank') Report a problem
-
-                                div.col-card-6
-                                    div.card
-                                        div.entry-content
-                                            p Want to contact us with any other queries and comments?
-                                            a(href='http://www.nationalarchives.gov.uk/contact/' role='button' target='_blank') Contact us
-
-                div.row.spacing-bottom
-                    div.col-md-12
-                        small The National Archives takes your privacy seriously and is committed to responsible handling of personal information. If you would like to know more, please click #[a(href="http://www.nationalarchives.gov.uk/legal/privacy-policy/") here].
+                        small The National Archives takes your privacy seriously and is committed to responsible handling of personal information. If you would like to know more, please click #[a(href="http://www.nationalarchives.gov.uk/legal/privacy-policy/" target="_blank") here].
 
         <!--[if lt IE 10]>
         script(src="js/js-library/jquery-1.9.0.min.js")
@@ -172,5 +163,5 @@ html(lang="en")
             _tag.dcsCollect();
             //]]>>
 
-        a(href='http://www.smartsurvey.co.uk/s/Your-views/?x=f' target='_blank').feedback
+        a(href='http://www.smartsurvey.co.uk/s/BG051/' target='_blank').feedback
             span Feedback
