@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
     include ./includes/head
     body.hue-grey-lighter
-        include ./includes/notification-banner
+        //include ./includes/notification-banner
         include ./includes/header
 
         main
@@ -91,7 +91,8 @@ html(lang="en")
 
                 div.row.spacing-bottom
                     div.col-md-12
-                        small The National Archives takes your privacy seriously and is committed to responsible handling of personal information. If you would like to know more, please click #[a(href="http://www.nationalarchives.gov.uk/legal/privacy-policy/" target="_blank") here].
+                        include ./includes/report-problem
+                        include ./includes/privacy-statement
 
         <!--[if lt IE 10]>
         script(src="js/js-library/jquery-1.9.0.min.js")

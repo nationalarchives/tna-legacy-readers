@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/nationalarchives/tna-css-toolkit.svg?branch=master)](https://travis-ci.org/nationalarchives/tna-css-toolkit)
 
-# tna-css-toolkit
+# TNA Readers Screen
 
-### The National Archives CSS frontend toolkit
+### The National Archive's readers screen portal 
 
 A collection of CSS and HTML elements for using as part of your application's frontend.
 

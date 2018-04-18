@@ -221,3 +221,9 @@ $background-height: 350px;
     margin-right: .5em;
   }
 }
+
+.row:last-of-type {
+  small {
+    display: block;
+  }
+}
