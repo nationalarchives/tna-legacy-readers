@@ -55,7 +55,6 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                //files: ['pug/index.pug', 'pug/reader-registration.pug'],
                 files: ['pug/*.pug', 'pug/includes/*.pug'],
                 tasks: ['pug']
             }
