@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         pug: {
             compile: {
                 options: {
-                    pretty: true,
+                    pretty: true
                 },
                 files: {
                     'index.html': 'pug/index.pug',
