@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         pug: {
             compile: {
                 options: {
-                    pretty: true,
+                    pretty: true
                 },
                 files: {
                     'index.html': 'pug/index.pug',
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'cssmin']
             },
             pug: {
-                files: ['pug/index.pug', 'pug/reader-registration.pug'],
+                files: ['pug/*.pug', 'pug/includes/*.pug'],
                 tasks: ['pug']
             }
         }
