@@ -6,18 +6,28 @@
 
 A collection of CSS and HTML elements for using as part of your application's frontend.
 
-## 1.0 Installation
-
-Coming soon...
+## 1.0 Prerequisite
+* Knowledge of the command line.
+* Node should be installed. Download setup [here](https://nodejs.org/en/)
 
 ## 2.0 Development setup
+##### In order to set up the project follow the steps defined below.
+* Using your terminal, you can navigate to the folder you wish to run the project from.
+* Type `git clone https://github.com/nationalarchives/tna-legacy-readers`.
+* Type `npm install`
+* Type `grunt`
 
-### 2.1 Clone Github repository 'tna-css-toolkit' using SourceTree
 
-Click 'Remote' in SourceTree and you will be shown a full list of repositories you have access to. Then: 
+### 3.0 Making changes
 
-* Create a folder called 'tna-css-toolkit' in the a desired directory
-* Select the 'tna-css-toolkit' repository in SourceTree and clone it to your newly created 'tna-css-toolkit' directory
+This is using the pug templating engine, which works in conjunction with grunt. Please refer to the pug [documentation](https://pugjs.org/api/getting-started.html) in order to make any changes.
+
+Folder structure
+* tna-legacy-readers
+** pug
+
+
+** Do not try and edit the HTML files directly, as the template files will override the changes if you have grunt running at the same.
 
 ### 2.2 Create a new project in PhpStorm
 

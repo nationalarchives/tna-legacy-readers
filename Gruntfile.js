@@ -67,6 +67,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', "Convert Jade templates into html templates", ['sass', 'cssmin', 'pug', 'watch']);
+    grunt.registerTask('default', "Convert Pug templates into html templates", ['sass', 'cssmin', 'pug', 'watch']);
 
 };
