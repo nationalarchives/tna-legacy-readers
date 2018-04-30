@@ -2,7 +2,6 @@ doctype html
 html(lang="en")
     include ./includes/head
     body.hue-grey-lighter
-        //include ./includes/notification-banner
         include ./includes/header
 
         main
@@ -11,8 +10,7 @@ html(lang="en")
                     div.col-md-12
                         div.shadow.hue-grey-light.content
                             div.entry-content.text-center
-                                h2.center-inline Unfamiliar with the archives?
-                                a.button.no-margin(href="http://www.nationalarchives.gov.uk/help-with-your-research/start-here/", role="button" target='_blank') Start here
+                                include ./includes/start-here
 
                 div.row
                     div.col-md-12
@@ -21,40 +19,17 @@ html(lang="en")
                                 div.col-card-4.left.ie
                                     div.card
                                         div.entry-content.clr
-                                            h2 Document ordering
-                                            p With a reader's ticket you can order original documents to view in the reading rooms.
-                                            ul.full
-                                                li: a(href='reader-registration.html' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Do I need a readers ticket?","WT.cg_n","Readers homepage","WT.dl","0");') Do I need a reader's ticket?
-                                                li: a(href='http://prologon.web.local/Entrance/default.asp' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Order documents","WT.cg_n","Readers homepage","WT.dl","0");' target='_blank') Order documents
-                                                li: a(href='http://doris.web.local/currord/default.aspx' target='_blank' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","Check current orders","WT.cg_n","Readers homepage","WT.dl","0");') Check current orders
-                                                li: a(href='http://doris.web.local/elsa/public/document-reservation-logon.asp' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Reserve for another day&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);' target='_blank') Reserve items for another day
-                                                li: a(href='http://www.nationalarchives.gov.uk/about/visit-us/researching-here/ordering-documents-in-advance-or-in-bulk/' target='_blank' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Order documents in advance&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Order documents for next time
+                                            include ./includes/document-ordering
 
                                 div.col-card-4.left.ie
                                     div.card
                                         div.entry-content.clr
-                                            h2 Online records
-                                            p Over 5% of The National Archives' records have so far been digitised.
-                                            ul.full
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=online' target='_blank' onclick='dcsMultiTrack("DCS.dcsuri","/readers/","WT.ti","All online records","WT.cg_n","Readers homepage","WT.dl","0");') All online records
-                                                li: a(href='http://www.findmypast.co.uk/1939register' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;1939 Register&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') 1939 register
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/census-records/#3-how-to-access-the-censuses' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Census records&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Census records
-                                                li: a(href='http://www.nationalarchives.gov.uk/first-world-war/centenary-digitised-records/' title='Link opens in a new window' target='_blank' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;First World War&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') First World War
-                                                li: a(href='http://www.nationalarchives.gov.uk/cabinetpapers/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Cabinet papers&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Cabinet papers
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/recommendations-military-honours-awards-1935-1990/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Military honours&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Military honours and awards 1935-1990
+                                            include ./includes/online-records
 
                                 div.col-card-4.left.ie
                                     div.card
                                         div.entry-content.clr
-                                            h2 Help with your research
-                                            p Use our research guides to help you uncover the history of places, people or subjects.
-                                            ul.full
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/?research-category=family-history' target='_black' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Find a research guide&quot;,&quot;WT.cg_n&quot;,&quot;Family history&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Family history
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/first-world-war/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;First world war&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') First World War
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides/second-world-war/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Second world war&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Second World War
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/#find-a-research-guide' title='Link opens in a new window' target='_blank' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Find a research guide&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Find a research guide
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/research-guides-keywords/' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;A-Z index&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);' ) A-Z index
-                                                li: a(href='http://www.nationalarchives.gov.uk/help-with-your-research/#other-research-tools' target='_blank' title='Link opens in a new window' onclick='dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Other research tools&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);') Other research tools
+                                            include ./includes/help-with-your-research
 
                 div.row
                     div.col-md-12
@@ -63,53 +38,22 @@ html(lang="en")
                                 div.col-card-8
                                     div.card
                                         div.entry-content
-                                            h2 Useful links
-                                            ul.child
-                                                li: a(href='http://www.nationalarchives.gov.uk/' target='_blank' title='Link opens in a new window') The National Archives
-                                                li: a(href='https://www.ancestry.co.uk/' target='_blank' title='Link opens in a new window') Ancestry
-                                                li: a(href='https://www.findmypast.co.uk/' target='_blank' title='Link opens in a new window') Find my past
-                                                li: a(href='https://www.freebmd.org.uk/' target='_blank' title='Link opens in a new window') FreeBMD
-                                                li: a(href='https://www.thegazette.co.uk/' target='_blank' title='Link opens in a new window') The Gazette
-                                                li: a(href='http://www.nationalarchives.gov.uk/labs/valuation-office-map-finder/' target='_blank' title='Link opens in a new window') Valuation Office map finder
-                                                li: a(href='http://tna.koha-ptfs.co.uk/' target='_blank' title='Link opens in a new window') Library
-                                                li: a(href='http://tnacufts.koha-ptfs.co.uk/CJDB/TNA/browse' target='_blank' title='Link opens in a new window') eLibrary
-                                                li: a(href='https://www.thegenealogist.co.uk/' target='_blank' title='Link opens in a new window') The Genealogist
+                                            include ./includes/useful-links
 
                                 div.col-card-4
                                     div.card
                                         div.entry-content
-                                            h2 Discovery, our catalogue
-                                            p Discovery contains short descriptions of records held here and at over 2,500 archives elsewhere. Search for document references using keywords and dates.
-                                            a(href='http://discovery.nationalarchives.gov.uk/?utm_source=reader-screens&utm_medium=reader-screen-link&utm_campaign=discovery-onsite-referrals' role='button' target='_blank').button.half Search our catalogue
+                                            include ./includes/discovery-catalogue
 
                 div.row.spacing-bottom
                     div.col-md-12
-                        div.shadow.background-image
-                            div.overlay-container
-                                div.overlay.text-right
-                                    a(href='http://www.nationalarchives.gov.uk/about/visit-us/whats-on/events/' role='button' target='_blank').button.ghost Find out what's on at The National Archives
+                        include ./includes/event
 
                 div.row.spacing-bottom
                     div.col-md-12
                         include ./includes/report-problem
                         include ./includes/privacy-statement
 
-        <!--[if lt IE 10]>
-        script(src="js/js-library/jquery-1.9.0.min.js")
-        script(src="js/ie.js")
-        <![endif]-->
-
-        script(src='js/js-library/webtrends.js' type='text/javascript' language='javascript')
-        script(type='text/javascript').
-            //<![CDATA[
-            var _tag = new WebTrends();
-            _tag.dcsGetId();
-            //]]>>
-        script(type='text/javascript').
-            //<![CDATA[
-            // Add custom parameters here.
-            //_tag.DCSext.param_name=param_value;
-            _tag.dcsCollect();
-            //]]>>
+        include ./includes/scripts
 
         include ./includes/feedback-button
