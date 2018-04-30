@@ -33,7 +33,7 @@ This is using the pug templating engine, which works in conjunction with grunt. 
       • reading-rooms.scss (general look and feel for the page)
       
     3. js
-      • js-library
+      • /js-library
       • ie.js (loads the js for ie only)
 
 
