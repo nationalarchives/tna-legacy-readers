@@ -1,4 +1,6 @@
 $background-height: 350px;
+$teal: #008484;
+$focus: #ebab00;
 
 .content {
   padding: 1em;
@@ -80,21 +82,51 @@ $background-height: 350px;
   position: absolute;
 }
 
-.overlay-container {
-  position: relative;
-  height: $background-height;
+a.focus-banner {
 
-  .overlay {
-    position: absolute;
-    height: 4.5em;
-    bottom: 0;
-    left: 0;
-    padding: 1em;
-    right: 0;
-    background: rgba(0,0,0,.66);
-    color: #ddd;
+  display: block;
+
+  &:focus {
+    outline: $focus solid 3px;
+
+    .overlay-container {
+      .overlay {
+        background: $teal;
+        transition: .5s;
+      }
+    }
+  }
+
+  .overlay-container {
+    position: relative;
+    height: $background-height;
+
+    &:hover {
+      .overlay {
+        background: $teal;
+        transition: .5s;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      height: 4.5em;
+      bottom: 0;
+      left: 0;
+      padding: 1em;
+      right: 0;
+      background: rgba(0,0,0,.66);
+      color: #ddd;
+      border-top: 1px solid #fff;
+      transition: .5s;
+
+      h2 {
+        margin: 0;
+      }
+    }
   }
 }
+
 
 .flex-row {
   .col-card-8, .col-card-6 {
@@ -180,7 +212,7 @@ $background-height: 350px;
 .feedback {
   width: 131px;
   height: 101px;
-  background-color: #008484;
+  background-color: $teal;
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
