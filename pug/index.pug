@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    include ./includes/head
+    body.hue-grey-lighter
+        include ./includes/notification-banner
+        include ./includes/header
+
+        main
+            div.container
+                div.row.spacing-bottom
+                    div.col-md-12
+                        div.shadow.hue-grey-light.content
+                            div.entry-content.text-center
+                                include ./includes/start-here
+
+                div.row
+                    div.col-md-12
+                        div.cards
+                            div.flex-row.equal-heights
+                                div.col-card-4.left.ie
+                                    div.card
+                                        div.entry-content.clr
+                                            include ./includes/document-ordering
+
+                                div.col-card-4.left.ie
+                                    div.card
+                                        div.entry-content.clr
+                                            include ./includes/online-records
+
+                                div.col-card-4.left.ie
+                                    div.card
+                                        div.entry-content.clr
+                                            include ./includes/help-with-your-research
+
+                div.row
+                    div.col-md-12
+                        div.cards
+                            div.flex-row.equal-heights.ie
+                                div.col-card-8
+                                    div.card
+                                        div.entry-content
+                                            include ./includes/useful-links
+
+                                div.col-card-4
+                                    div.card
+                                        div.entry-content
+                                            include ./includes/discovery-catalogue
+
+                div.row.spacing-bottom
+                    div.col-md-12
+                        include ./includes/event
+
+                div.row.spacing-bottom
+                    div.col-md-12
+                        include ./includes/report-problem
+                        include ./includes/privacy-statement
+
+        include ./includes/scripts
+
+        include ./includes/feedback-button

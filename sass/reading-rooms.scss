@@ -1,0 +1,262 @@
+$background-height: 350px;
+$teal: #008484;
+$focus: #ebab00;
+
+.content {
+  padding: 1em;
+
+  h2 {
+    display: inline-block;
+  }
+}
+
+.card {
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 7px #ccc;
+  }
+  .full {
+    a {
+      &:hover {
+        text-decoration: underline;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.spacing-bottom {
+  margin-bottom: 1.5em;
+}
+
+.round-borders {
+  border: solid 1px #ddd;
+  border-radius: 4px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.shadow {
+  box-shadow: 0 2px 5px #ddd;
+}
+
+.white-background {
+  background: #fff;
+}
+
+.background-image {
+  background: url("/img/new-season-banner.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: $background-height;
+}
+
+.card-single {
+  background: #fff;
+  padding: 1em;
+}
+
+.clr {
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+a.focus-banner {
+
+  display: block;
+
+  &:focus {
+    outline: $focus solid 3px;
+
+    .overlay-container {
+      .overlay {
+        background: $teal;
+        transition: .5s;
+      }
+    }
+  }
+
+  .overlay-container {
+    position: relative;
+    height: $background-height;
+
+    &:hover {
+      .overlay {
+        background: $teal;
+        transition: .5s;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      height: 4.5em;
+      bottom: 0;
+      left: 0;
+      padding: 1em;
+      right: 0;
+      background: rgba(0,0,0,.66);
+      color: #ddd;
+      border-top: 1px solid #fff;
+      transition: .5s;
+
+      h2 {
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.flex-row {
+  .col-card-8, .col-card-6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 1.5em;
+  }
+
+  .col-card-8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.6666%;
+    -ms-flex: 0 0 66.6666%;
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+    min-width: 66.6666%;
+
+    @media(max-width: 768px) {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .col-card-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+
+    .entry-content {
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @media(max-width: 768px) {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .card {
+    .entry-content {
+       > a {
+         &:hover {
+           box-shadow: none;
+         }
+       }
+    }
+
+    .half {
+      width: 50%;
+
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    ul {
+      a {
+        &:hover {
+          text-decoration: underline;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.feedback {
+  width: 131px;
+  height: 101px;
+  background-color: $teal;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: #fff;
+  text-align: center;
+  padding: .5em;
+
+  right: -80px;
+  top: 50%;
+
+  position: fixed;
+
+  font-family: "Open Sans", arial, serif;
+
+  &:hover {
+    background-color: #fce45c;
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+#header {
+  background-color : #222 \9; /* IE8 and below */
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color : #fff\9; /* IE8 and below */
+  }
+}
+
+.row{
+  h2.center-inline {
+    margin-right: .5em;
+  }
+}
+
+.row:last-of-type {
+  small {
+    display: block;
+  }
+}
