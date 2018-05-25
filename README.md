@@ -1,5 +1,6 @@
 # tna-legacy-readers
 TNA readers screens (legacy version)
+Version 2.0
 
 default.asp sets up the frame - I'm fairly certain it doesn't need to be an asp file
 I'm not sure if orders.asp is used at all
