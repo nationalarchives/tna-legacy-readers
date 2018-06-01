@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-# tna-legacy-readers
+# TNA Readers Screen
 TNA readers screens (legacy version)
 Version 2.0
-=======
-[![Build Status](https://travis-ci.org/nationalarchives/tna-css-toolkit.svg?branch=master)](https://travis-ci.org/nationalarchives/tna-css-toolkit)
->>>>>>> 663bf1c73a6a3d51a0d7e22481cfe44034d0d9cc
 
-# TNA Readers Screen
+[![Build Status](https://travis-ci.org/nationalarchives/tna-css-toolkit.svg?branch=master)](https://travis-ci.org/nationalarchives/tna-css-toolkit)
 
 ### The National Archive's readers screen portal 
 
