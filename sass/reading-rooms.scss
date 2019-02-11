@@ -212,7 +212,6 @@ a.focus-banner {
 
 .feedback {
   width: 131px;
-  height: 101px;
   background-color: $teal;
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -221,8 +220,8 @@ a.focus-banner {
   text-align: center;
   padding: .5em;
 
-  right: -80px;
   top: 50%;
+  left: -45px;
 
   position: fixed;
 
