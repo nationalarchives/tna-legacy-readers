@@ -83,7 +83,6 @@ $focus: #ebab00;
 }
 
 a.focus-banner {
-
   display: block;
 
   &:focus {
@@ -92,7 +91,7 @@ a.focus-banner {
     .overlay-container {
       .overlay {
         background: $teal;
-        transition: .5s;
+        transition: 0.5s;
       }
     }
   }
@@ -104,7 +103,7 @@ a.focus-banner {
     &:hover {
       .overlay {
         background: $teal;
-        transition: .5s;
+        transition: 0.5s;
       }
     }
 
@@ -115,10 +114,10 @@ a.focus-banner {
       left: 0;
       padding: 1em;
       right: 0;
-      background: rgba(0,0,0,.66);
+      background: rgba(0, 0, 0, 0.66);
       color: #ddd;
       border-top: 1px solid #fff;
-      transition: .5s;
+      transition: 0.5s;
 
       h2 {
         margin: 0;
@@ -128,9 +127,9 @@ a.focus-banner {
   }
 }
 
-
 .flex-row {
-  .col-card-8, .col-card-6 {
+  .col-card-8,
+  .col-card-6 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -148,7 +147,7 @@ a.focus-banner {
     max-width: 66.6666%;
     min-width: 66.6666%;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
@@ -173,7 +172,7 @@ a.focus-banner {
       }
     }
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
@@ -184,17 +183,17 @@ a.focus-banner {
 
   .card {
     .entry-content {
-       > a {
-         &:hover {
-           box-shadow: none;
-         }
-       }
+      > a {
+        &:hover {
+          box-shadow: none;
+        }
+      }
     }
 
     .half {
       width: 50%;
 
-      @media(max-width: 768px) {
+      @media (max-width: 768px) {
         width: 100%;
       }
     }
@@ -211,17 +210,17 @@ a.focus-banner {
 }
 
 .feedback {
-  width: 131px;
+  // width: 131px;
   background-color: $teal;
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   color: #fff;
   text-align: center;
-  padding: .5em;
+  padding: 0.5em 1em;
 
   top: 50%;
-  left: -45px;
+  left: -100px;
 
   position: fixed;
 
@@ -232,6 +231,9 @@ a.focus-banner {
     color: #000;
     text-decoration: underline;
   }
+  span {
+    padding: 1em;
+  }
 }
 
 .no-margin {
@@ -239,18 +241,18 @@ a.focus-banner {
 }
 
 #header {
-  background-color : #222 \9; /* IE8 and below */
+  background-color: #222 \9; /* IE8 and below */
 
   h1 {
     margin-top: 0;
     margin-bottom: 0;
-    color : #fff\9; /* IE8 and below */
+    color: #fff\9; /* IE8 and below */
   }
 }
 
-.row{
+.row {
   h2.center-inline {
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
 }
 
