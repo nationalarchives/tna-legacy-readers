@@ -22,7 +22,7 @@ Version 2.0
 
 This is using the pug templating engine, which works in conjunction with grunt. Please refer to the pug [documentation](https://pugjs.org/api/getting-started.html) in order to make any changes.
 
-    1. pug (edit the files here to see HTML chnages)
+    1. pug (edit the files here to see HTML changes)
       • index.pug
       • readers-registration.pug
       • /includes
