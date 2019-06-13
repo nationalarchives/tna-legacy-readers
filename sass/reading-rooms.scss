@@ -51,7 +51,7 @@ $focus: #ebab00;
 }
 
 .background-image {
-  background: url("/img/new-season-banner.jpg") no-repeat top center;
+  background: url('/img/new-season-banner.jpg') no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -66,7 +66,7 @@ $focus: #ebab00;
 
 .clr {
   &:after {
-    content: "";
+    content: '';
     display: block;
     height: 0;
     clear: both;
@@ -224,7 +224,7 @@ a.focus-banner {
 
   position: fixed;
 
-  font-family: "Open Sans", arial, serif;
+  font-family: 'Open Sans', arial, serif;
 
   &:hover {
     background-color: #fce45c;
@@ -247,6 +247,9 @@ a.focus-banner {
     margin-top: 0;
     margin-bottom: 0;
     color: #fff\9; /* IE8 and below */
+  }
+  img {
+    max-width: 347px;
   }
 }
 
