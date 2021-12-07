@@ -24,21 +24,22 @@
     <script src="js/js/js-library/respond.min.js"></script><![endif]-->
   </head>
   <body class="hue-grey-lighter">
-    <div class="notification-banner">
+
+  <div class="notification-banner">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="notice"><strong class="title">BETA</strong>
-              <p>This is a new service - your <a href="http://www.smartsurvey.co.uk/s/BG051/" target="_blank" title="Link opens in a new window">feedback</a> will help us improve it.</p>
+            <div class="notice"><strong class="title">Survey</strong>
+              <p>How’s your visit to The National Archives going today? <a href="https://www.smartsurvey.co.uk/s/VisitorSurvey2019/" target="_blank">Tell us here</a>.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <header class="spacing-bottom">
+  <header class="spacing-bottom">
       <div class="container">
         <div class="row" id="header">
-          <div class="col-xs-2 col-sm-5"><a class="visible-lg visible-md visible-sm" href="http://www.nationalarchives.gov.uk" target="_blank"><img class="img-responsive" src="img/img/tna-horizontal-white-logo.png" srcset="img/tna-horizontal-white-logo.svg"></a></div>
+          <div class="col-xs-2 col-sm-5"><a class="visible-lg visible-md visible-sm" href="http://www.nationalarchives.gov.uk" target="_blank"><img class="img-responsive" src="/img/tna-horizontal-white-logo.png" srcset="/img/tna-horizontal-white-logo.svg"></a></div>
           <div class="col-xs-10 col-sm-7 text-right">
             <h1>Welcome to the reading rooms</h1>
           </div>
@@ -69,10 +70,49 @@
                         <li><a href="reader-registration.html" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Do I need a readers ticket?&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);">Do I need a reader's ticket?</a></li>
                         <li><a href="http://public.prologon.web.local/Entrance/default.asp" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Order documents&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);" target="_blank" title="Link opens in a new window">Order documents</a></li>
                         <li><a href="http://public.doris.web.local/currord/default.aspx" target="_blank" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Check current orders&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);" title="Link opens in a new window">Check current orders</a></li>
-                        <li><a href="http://public.doris.web.local/elsa/public/document-reservation-logon.asp" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;Reserve for another day&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);" target="_blank" title="Link opens in a new window">Reserve items for another day</a></li>
+                     </ul>
+                      <h2><a id="livechat" class="anchor" href="#livechat" aria-hidden="true"></a>Live chat</h2>
+    <div class="live-chat sidebar-item">
+        <p>
+          For quick pointers<br>
+          Tuesday to Saturday<br>
+          09:00 to 17:00
+        </p>
+<div data-id="<?php echo $webchat_id; ?>" class="livechat_button"><a href="https://www.nationalarchives.gov.uk/contact-us/">live chat software</a></div>
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.ga_version = "gtm";
+window.__lc.license = 10565762;
+;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10565762/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+</div>
+
+                    </div>
+
+<!--
+                    <div class="entry-content clr">
+                      <h2>Document ordering</h2>
+                      <p>With a reader's ticket you can order original documents to view in the reading rooms.</p>
+                      <ul class="full">
+                        <li><a href="reader-registration.html" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Do I need a readers ticket?&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);">Do I need a reader's ticket?</a></li>
+                        <li><a href="http://test.prologon.web.local/Entrance/default.asp" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Order documents&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);" target="_blank" title="Link opens in a new window">Order documents</a></li>
+                        <li><a href="http://test.doris.web.local/currord/default.aspx" target="_blank" onclick="dcsMultiTrack(&quot;DCS.dcsuri&quot;,&quot;/readers/&quot;,&quot;WT.ti&quot;,&quot;Check current orders&quot;,&quot;WT.cg_n&quot;,&quot;Readers homepage&quot;,&quot;WT.dl&quot;,&quot;0&quot;);" title="Link opens in a new window">Check current orders</a></li>
+                        <li><a href="http://test.doris.web.local/elsa/public/document-reservation-logon.asp" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;Reserve for another day&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);" target="_blank" title="Link opens in a new window">Reserve items for another day</a></li>
                         <li><a href="http://www.nationalarchives.gov.uk/about/visit-us/researching-here/ordering-documents-in-advance-or-in-bulk/" target="_blank" onclick="dcsMultiTrack(&amp;quot;DCS.dcsuri&amp;quot;,&amp;quot;/readers/&amp;quot;,&amp;quot;WT.ti&amp;quot;,&amp;quot;Order documents in advance&amp;quot;,&amp;quot;WT.cg_n&amp;quot;,&amp;quot;Readers homepage&amp;quot;,&amp;quot;WT.dl&amp;quot;,&amp;quot;0&amp;quot;);" title="Link opens in a new window">Order documents for next time</a></li>
                       </ul>
                     </div>
+-->
+
+
+
+
+
                   </div>
                 </div>
                 <div class="col-card-4 left ie">
@@ -126,9 +166,10 @@
                         <li><a href="https://www.freebmd.org.uk/" target="_blank" title="Link opens in a new window">FreeBMD</a></li>
                         <li><a href="https://www.thegazette.co.uk/" target="_blank" title="Link opens in a new window">The Gazette</a></li>
                         <li><a href="http://www.nationalarchives.gov.uk/labs/valuation-office-map-finder/" target="_blank" title="Link opens in a new window">Valuation Office map finder</a></li>
-                        <li><a href="http://tna.koha-ptfs.co.uk/" target="_blank" title="Link opens in a new window">Library catalogue</a></li>
-                        <li><a href="http://tnacufts.koha-ptfs.co.uk/CJDB/TNA/browse" target="_blank" title="Link opens in a new window">eLibrary</a></li>
+                        <li><a href="http://tna.koha-ptfs.co.uk/" target="_blank" title="Link opens in a new window">Library catalogue including eLibrary</a></li>
                         <li><a href="https://www.thegenealogist.co.uk/" target="_blank" title="Link opens in a new window">The Genealogist</a></li>
+                        <li><a href="https://www.familysearch.org/en/" target="_blank" title="Link opens in a new window">FamilySearch</a></li>
+                        <li><a href="https://lst.gale.com/mss/start.do?p=SPOL&u=pro&authCount=1" target="_blank" title="Link opens in a new window">State Papers Online</a></li>
                       </ul>
                     </div>
                   </div>

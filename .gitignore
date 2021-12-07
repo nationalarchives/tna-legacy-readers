@@ -2,7 +2,7 @@ OrderDocScreen/
 backup/
 aspnet_client/
 /.idea
-
+.DS_Store
 node_modules
 # Created by https://www.gitignore.io/api/phpstorm,sublimetext
 ### PhpStorm ###
