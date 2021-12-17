@@ -252,13 +252,14 @@ a.focus-banner .overlay-container .overlay h2 {
     padding: 20px 0px 10px 0px;
     display: block;
     font-family: Bitter, "Open Sans", arial, serif;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #000;
+    text-decoration: underline
 }
 
 .tna-link:hover{
     color: #000;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .twenties{
     background-color: #fad3d4;
@@ -281,6 +282,7 @@ a.focus-banner .overlay-container .overlay h2 {
     color:#fff !important;
     background-color: #222222;
     padding:5px;
+    border:0px;
 }
 
 
