@@ -278,6 +278,11 @@ a.focus-banner .overlay-container .overlay h2 {
     color:#fff;
 }
 
+#census-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
 .census-toggle{
     color:#fff !important;
     background-color: #222222;
